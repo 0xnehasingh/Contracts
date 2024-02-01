@@ -1,32 +1,25 @@
 ![image](https://github.com/0xnehasingh/Contracts/assets/67492324/80744e64-e8bd-4d2c-af3f-e3aa2e44ddb4)
 
-# Vowel Remover Solidity Contract
+# Cryptocurrency Round Trip Calculator
 
-This repository contains a Solidity smart contract that provides a simple utility function to remove vowels from a string. The contract is intended for educational purposes and demonstrates basic string manipulation within a smart contract.
+## Introduction
+This repository contains a Solidity smart contract for calculating a viable round trip of cryptocurrency balances across multiple exchanges, considering the network fees for transfers. The contract is designed to determine whether a trader can start from one exchange and move funds through all other exchanges in a circular fashion without losing money due to network fees.
 
-## Contract Overview
-
-The `VowelRemover` contract includes one function:
-
-- `removeVowels(string memory input) public pure returns (string memory)`
-
-This function takes a string as input and outputs a new string with all the vowel characters (both uppercase and lowercase) removed.
+## Problem Statement
+A trader has accounts on multiple cryptocurrency exchanges. Each exchange has a balance and there is a fixed network fee associated with transferring funds from one exchange to another. The task is to find if there exists a starting exchange such that the trader can transfer all funds through each exchange and back to the start without depleting any exchange's balance below zero after accounting for network fees.
 
 ## Prerequisites
-
-Before deploying or interacting with the contract, ensure you have the following:
-
+To compile and deploy this contract, you will need:
 - [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- [Truffle Suite](https://www.trufflesuite.com/truffle)
+- [Truffle Suite](https://www.trufflesuite.com/)
 - [Ganache](https://www.trufflesuite.com/ganache) for a personal Ethereum blockchain
-- [MetaMask](https://metamask.io/) extension installed in your browser for interacting with Ethereum blockchain
 
-## Getting Started
+## Installation
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/your-github-username/cryptocurrency-roundtrip.git
+cd cryptocurrency-roundtrip
 
-To get started with the VowelRemover contract, clone the repository and install the necessary dependencies.
-
-```shell
 git clone https://github.com/your-username/vowel-remover-solidity.git
 cd vowel-remover-solidity
 npm install
