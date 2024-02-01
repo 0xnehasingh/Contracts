@@ -9,18 +9,49 @@ This repository contains a Solidity smart contract for calculating a viable roun
 ## Problem Statement
 A trader has accounts on multiple cryptocurrency exchanges. Each exchange has a balance and there is a fixed network fee associated with transferring funds from one exchange to another. The task is to find if there exists a starting exchange such that the trader can transfer all funds through each exchange and back to the start without depleting any exchange's balance below zero after accounting for network fees.
 
-## Prerequisites
-To compile and deploy this contract, you will need:
-- [Node.js](https://nodejs.org/)
-- [Truffle Suite](https://www.trufflesuite.com/)
-- [Ganache](https://www.trufflesuite.com/ganache) for a personal Ethereum blockchain
+Features
+Round Trip Evaluation: Determines if a round trip transaction is possible starting from any wallet, given the balances of the wallets and the network fees required for transactions between them.
+Network Fee Accounting: Considers the network fees for each transaction to ensure the feasibility of the round trip.
+Efficiency: Optimized for minimal gas consumption with pure functions that do not modify the contract state.
+Prerequisites
+To interact with this contract, you will need:
 
-## Installation
-Clone the repository to your local machine:
-```bash
-git clone https://github.com/your-github-username/cryptocurrency-roundtrip.git
-cd cryptocurrency-roundtrip
+An Ethereum wallet with some ETH for deployment and transaction fees.
+A Solidity development environment such as Remix, Truffle, or Hardhat set up on your computer or browser.
+Installation
+Clone the Repository:
 
-git clone https://github.com/your-username/vowel-remover-solidity.git
-cd vowel-remover-solidity
+shell
+Copy code
+git clone <repository-url>
+Navigate to the Contract Directory:
+
+shell
+Copy code
+cd path/to/CryptocurrencyRoundTrip
+Install Dependencies:
+
+Make sure you have npm installed and run:
+
+shell
+Copy code
 npm install
+This step is more relevant if you are using a project setup with Truffle or Hardhat that may have dependencies.
+
+Usage
+To use the CryptocurrencyRoundTrip contract, follow these steps:
+
+Deploy the Contract:
+
+Use your preferred Solidity development environment to compile and deploy the contract to an Ethereum testnet or mainnet.
+
+Interact with the Contract:
+
+roundTrip: Pass arrays of wallet balances and corresponding network fees to this function. It will return the index of the starting wallet if a round trip is possible, or -1 if it is not.
+Example call:
+
+solidity
+Copy code
+int[] memory walletBalances = [100, 50, -20];
+int[] memory networkFees = [10, 5, 15];
+contractInstance.roundTrip(walletBalances, networkFees);
