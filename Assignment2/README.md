@@ -25,16 +25,19 @@ To interact with this contract, you will need:
 
 ### 1. Clone the Repository:
 
-git clone <repository-url>
+<img width="593" alt="Screenshot 2024-02-01 at 4 03 18 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/c2311f00-3e77-48a2-9796-4f8b3bb4fb9e">
 
 ### 2. Navigate to the Contract Directory:
 
-cd path/to/CryptocurrencyRoundTrip
+<img width="596" alt="Screenshot 2024-02-01 at 4 04 14 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/1288a731-ff64-4028-8768-17d43b90aafb">
+
+
 ### 3. Install Dependencies:
 
 Make sure you have npm installed and run:
 
-npm install
+<img width="589" alt="Screenshot 2024-02-01 at 4 05 19 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/4a293bb6-55fa-47e7-b076-384068c1142b">
+
 This step is more relevant if you are using a project setup with Truffle or Hardhat that may have dependencies.
 
 ## Usage
