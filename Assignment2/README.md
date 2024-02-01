@@ -26,14 +26,15 @@ To interact with this contract, you will need:
 ### 1. Clone the Repository:
 
 git clone <repository-url>
-Navigate to the Contract Directory:
+
+### 2. Navigate to the Contract Directory:
 
 cd path/to/CryptocurrencyRoundTrip
-### 2. Install Dependencies:
+### 3. Install Dependencies:
 
 Make sure you have npm installed and run:
 
-### 3. npm install
+npm install
 This step is more relevant if you are using a project setup with Truffle or Hardhat that may have dependencies.
 
 ## Usage
@@ -51,5 +52,7 @@ Use your preferred Solidity development environment to compile and deploy the co
 Example call:
 
 int[] memory walletBalances = [100, 50, -20];
+
 int[] memory networkFees = [10, 5, 15];
+
 contractInstance.roundTrip(walletBalances, networkFees);
