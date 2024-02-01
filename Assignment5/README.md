@@ -1,32 +1,69 @@
-![image](https://github.com/0xnehasingh/Contracts/assets/67492324/80744e64-e8bd-4d2c-af3f-e3aa2e44ddb4)
+![image](https://github.com/0xnehasingh/Contracts/assets/67492324/0fc74969-ad93-4f95-b05f-0342629785ee)
 
-# Vowel Remover Solidity Contract
+# StockProfit Contract
 
-This repository contains a Solidity smart contract that provides a simple utility function to remove vowels from a string. The contract is intended for educational purposes and demonstrates basic string manipulation within a smart contract.
+The StockProfit contract is a Solidity-based smart contract designed for the Ethereum blockchain. Its primary function is to calculate the maximum profit that can be obtained from a list of stock prices given an array where each element represents the stock price for a given day. This contract could be a foundational element for financial analysis tools or decentralized applications (dApps) focused on investment strategies.
 
-## Contract Overview
+## Features
 
-The `VowelRemover` contract includes one function:
-
-- `removeVowels(string memory input) public pure returns (string memory)`
-
-This function takes a string as input and outputs a new string with all the vowel characters (both uppercase and lowercase) removed.
+- Maximum Profit Calculation: Calculates the maximum profit from buying and selling at optimal days.
+- Efficiency: Optimized for minimal gas consumption with pure function modifiers.
+- Flexibility: Can handle an arbitrary list of daily prices passed as an input.
 
 ## Prerequisites
 
-Before deploying or interacting with the contract, ensure you have the following:
+Before you deploy or interact with the StockProfit contract, ensure you have the following:
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- [Truffle Suite](https://www.trufflesuite.com/truffle)
-- [Ganache](https://www.trufflesuite.com/ganache) for a personal Ethereum blockchain
-- [MetaMask](https://metamask.io/) extension installed in your browser for interacting with Ethereum blockchain
+Node.js installed (version 12.x or higher recommended).
+Truffle Suite or Hardhat for compiling and deploying the contract.
+MetaMask or any Ethereum wallet configured for the network you intend to deploy on.
 
-## Getting Started
+## Installation
 
-To get started with the VowelRemover contract, clone the repository and install the necessary dependencies.
+1.Clone this repository to your local machine using Git:
 
-```shell
-git clone https://github.com/your-username/vowel-remover-solidity.git
-cd vowel-remover-solidity
-npm install
+<img width="593" alt="Screenshot 2024-02-01 at 4 32 17 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/9322c9ab-1ec1-478e-8500-dfa7530c527f">
+
+2. Navigate into the cloned directory:
+   
+<img width="588" alt="Screenshot 2024-02-01 at 4 32 58 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/31b69c0e-b5b2-40e8-b7bb-8acc01b8190c">
+
+3. Install necessary Node.js dependencies (if any):
+
+   <img width="593" alt="Screenshot 2024-02-01 at 4 33 50 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/c90191a6-919a-4745-88d2-149dcf068d93">
+
+## Usage
+
+To use the StockProfit contract, follow these steps:
+
+### Compilation
+
+Compile the contract using Truffle or Hardhat:
+
+<img width="590" alt="Screenshot 2024-02-01 at 4 35 38 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/7fb532cd-a8d8-4ca6-8aee-a0ba834879a6">
+
+## Deployment
+
+Deploy the contract to your desired network (e.g., development, Rinkeby, Mainnet) using the same tools:
+
+### -Truffle: 
+
+<img width="589" alt="Screenshot 2024-02-01 at 4 36 59 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/e898e010-90ed-464d-b18a-c760afe139f3">
+
+### -Hardhat:
+
+   <img width="587" alt="Screenshot 2024-02-01 at 4 37 44 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/9fcb76d2-2c58-4486-884b-cc253d2713e1">
+
+### Interacting 
+
+After deployment, interact with the contract through a web3 provider like MetaMask or programmatically using a script. For example, to calculate the maximum profit:
+
+<img width="598" alt="Screenshot 2024-02-01 at 4 39 06 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/21332aae-c8d1-4a75-8783-6a6b70e519c9">
+
+Contributing
+Contributions to the StockProfit contract are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Write your code and ensure it adheres to the project's coding standards.
+4. Submit a pull request with a comprehensive description of your changes.
