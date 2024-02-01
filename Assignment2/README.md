@@ -51,8 +51,4 @@ Use your preferred Solidity development environment to compile and deploy the co
 
 Example call:
 
-int[] memory walletBalances = [100, 50, -20];
-
-int[] memory networkFees = [10, 5, 15];
-
-contractInstance.roundTrip(walletBalances, networkFees);
+<img width="599" alt="Screenshot 2024-02-01 at 4 00 29 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/418afb45-566e-4c0b-9254-5cc080b57605">
