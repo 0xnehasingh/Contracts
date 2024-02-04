@@ -16,10 +16,7 @@ This function takes a string as input and outputs a new string with all the vowe
 
 Before deploying or interacting with the contract, ensure you have the following:
 
-- [Node.js](https://nodejs.org/)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-- [Truffle Suite](https://www.trufflesuite.com/truffle)
-- [Ganache](https://www.trufflesuite.com/ganache) for a personal Ethereum blockchain
+- [npm](https://www.npmjs.com/) 
 - [MetaMask](https://metamask.io/) extension installed in your browser for interacting with Ethereum blockchain
 
 ## Getting Started
