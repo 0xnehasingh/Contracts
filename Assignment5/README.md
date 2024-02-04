@@ -40,10 +40,6 @@ To use the StockProfit contract, follow these steps:
 
 Deploy the contract to your desired network (e.g., development, Sepolia, Mainnet) using the same tools:
 
-### -Remix:
-
-   <img width="587" alt="Screenshot 2024-02-01 at 4 37 44 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/9fcb76d2-2c58-4486-884b-cc253d2713e1">
-
 ### Interacting 
 
 After deployment, interact with the contract through a web3 provider like MetaMask or programmatically using a script. For example, to calculate the maximum profit:
