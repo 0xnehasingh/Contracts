@@ -1,49 +1,51 @@
 ![image](https://github.com/0xnehasingh/Contracts/assets/67492324/59404767-dd38-4ccd-8cc9-797576074a35)
 
-
-# BlockchainGaming Contract
+# RouletteGame Smart Contract
 
 ## Overview
 
 The BlockchainGaming contract is a Solidity project designed to simulate a basic gaming economy on the Ethereum blockchain. It allows for the creation of games and assets within those games, player registration, and the buying, selling, and transferring of assets. This project demonstrates the use of smart contracts to manage game assets securely and transparently.
 
+## Smart Contract Details
+
+### Token
+
+The smart contract relies on an ERC-20 token (imported from OpenZeppelin) for handling in-game currency. Users can buy tokens by sending Ether to the contract.
+
 ## Features
 
-- Player Registration: Users can register as players with a unique username and receive initial credits.
-- Game Management: The contract owner can create and remove games.
-- Asset Management: Assets can be bought, sold, and transferred among players. Asset prices increase upon purchase and decrease upon sale, simulating a dynamic economy.
+- Buy Tokens: Users can purchase in-game tokens by sending Ether to the contract.
+- Place Bets: Users can place bets on individual numbers or even/odd outcomes.
+- Spin the Wheel: The contract owner can trigger the wheel spin, determining the winning number.
+- Transfer Winnings: After a spin, the contract automatically calculates and transfers winnings to the respective winners.
 
-## Technical Details
+## Bets Handling
 
-- Solidity Version: ^0.8.0
-- Development Environment: Remix IDE
-- Access Control: Functions are protected, ensuring that only eligible users can perform certain operations (e.g., only the owner can create or remove games).
-- 
+- buyTokens: Allows users to buy tokens by sending Ether.
+- placeBetOnNumber: Allows users to place bets on individual numbers.
+- placeBetOnEven and placeBetOnOdd: Allows users to place bets on even and odd outcomes.
+- spinWheel: Only the contract owner can trigger the wheel spin.
+- setSpinWheelResult: Allows the owner to set a specific result for testing purposes.
+- transferWinnings: Calculates and transfers winnings based on the winning number and bets placed.
+- checkBalance: View function to check the user's token balance.
+- checkWinningNumber: View function to check the winning number.
+
 ## Getting Started
-
-### Prerequisites
-
-- Install MetaMask or any Ethereum wallet compatible with web3.js.
-- Have some Ether in your wallet if you're deploying to a testnet or the mainnet.
   
 ### Deployment
 
-1. Open Remix IDE.
-2. Create a new file and name it BlockchainGaming.sol.
-3. Copy the content of the BlockchainGaming contract into the newly created file.
-4. Compile the contract using the Remix IDE compiler.
-5. Deploy the contract to your chosen network (e.g., Rinkeby testnet) using the Remix IDE deployer.
+The contract is deployed by specifying the address of the ERC-20 token as a constructor parameter.
 
-## Interacting with the Contract
 
-You can interact with the deployed contract through Remix IDE or by integrating it with a frontend using web3.js or ethers.js. Here are some of the core functionalities:
+## Killing the Contract
 
-- Register Player: Call registerPlayer with a desired username to register as a new player.
-- Create Game: Only accessible by the contract owner. Call createGame with a game name to create a new game.
-- Buy Asset: Players can buy assets by calling buyAsset with the asset ID.
-- Sell Asset: Players can sell their assets back to the contract by calling sellAsset.
-- Transfer Asset: Assets can be transferred between players using transferAsset.
+The owner can call the kill function to destroy the contract and reclaim any remaining Ether.
   
-## Events
+## Usage
 
-The contract emits events for key activities such as player registration, asset purchases, sales, and transfers, allowing applications to react to these operations in real time.
+1. Deploy the contract, providing the address of the ERC-20 token.
+2. Users buy tokens by sending Ether to the contract.
+3. Users place bets on numbers, even, or odd outcomes.
+4. The owner triggers the wheel spin.
+5. Winnings are automatically distributed based on the winning number and bet types.
+6. The contract owner can reclaim any remaining Ether by calling the kill function.
