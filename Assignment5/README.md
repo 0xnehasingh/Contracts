@@ -15,7 +15,7 @@ The StockProfit contract is a Solidity-based smart contract designed for the Eth
 Before you deploy or interact with the StockProfit contract, ensure you have the following:
 
 Node.js installed (version 12.x or higher recommended).
-Truffle Suite or Hardhat for compiling and deploying the contract.
+Remix Ide for compiling and deploying the contract.
 MetaMask or any Ethereum wallet configured for the network you intend to deploy on.
 
 ## Installation
@@ -36,21 +36,11 @@ MetaMask or any Ethereum wallet configured for the network you intend to deploy 
 
 To use the StockProfit contract, follow these steps:
 
-### Compilation
-
-Compile the contract using Truffle or Hardhat:
-
-<img width="590" alt="Screenshot 2024-02-01 at 4 35 38 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/7fb532cd-a8d8-4ca6-8aee-a0ba834879a6">
-
 ## Deployment
 
-Deploy the contract to your desired network (e.g., development, Rinkeby, Mainnet) using the same tools:
+Deploy the contract to your desired network (e.g., development, Sepolia, Mainnet) using the same tools:
 
-### -Truffle: 
-
-<img width="589" alt="Screenshot 2024-02-01 at 4 36 59 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/e898e010-90ed-464d-b18a-c760afe139f3">
-
-### -Hardhat:
+### -Remix:
 
    <img width="587" alt="Screenshot 2024-02-01 at 4 37 44 PM" src="https://github.com/0xnehasingh/Contracts/assets/67492324/9fcb76d2-2c58-4486-884b-cc253d2713e1">
 
